@@ -1,0 +1,333 @@
+<?php
+/**
+ * SplDoublyLinkedList类提供双链接列表的主要功能。
+ *
+ * SplDoublyLinkedList  implements Iterator  , ArrayAccess  , Countable  , Serializable
+ *
+ * 它有两个子集 SplStack 限制为堆栈模式；SplQueue 限制为队列样式
+ *
+ *
+ *
+ */
+
+
+namespace HappyLin\OldPlugin\SingleClass\SPL\Datastructures;
+
+
+use \SplDoublyLinkedList;
+
+/**
+ * Class DoublyLinkedList 这将构造一个新的空双链接列表。
+ * @package HappyLin\OldPlugin\SingleClass\SPL\Datastructures
+ */
+class DoublyLinkedList extends SplDoublyLinkedList
+{
+
+
+    public function __construct()
+    {
+    }
+
+
+    /**
+     * 返回迭代模式
+     *
+     *  IT_MODE_LIFO => int(2)      后进先出
+     *  IT_MODE_FIFO => int(0)      先进先出
+     *  IT_MODE_DELETE => int(1)
+     *  IT_MODE_KEEP => int(0)
+     *
+     * @return int | null 返回影响迭代的不同模式和标志。
+     */
+    public function getIteratorMode()
+    {
+        return parent::getIteratorMode();
+    }
+
+
+    /**
+     * 设置迭代模式
+     *
+     * $mode
+     * 可以设置两组正交模式：
+     *  ◦ 迭代方向（一个或另一个）：
+     *      ◦SplDoublyLinkedList::IT_MODE_LIFO => int(2)    （堆栈样式）后进先出
+     *      ◦SplDoublyLinkedList::IT_MODE_FIFO => int(0)    （队列样式）先进先出
+     *
+     *  ◦ 迭代器的行为（一个或另一个）：
+     *      ◦SplDoublyLinkedList::IT_MODE_DELETE => int(1)  （元素被迭代器删除）
+     *      ◦SplDoublyLinkedList::IT_MODE_KEEP => int(0)    （元素被迭代器遍历）
+     *
+     *
+     * 默认模式为：SplDoublyLinkedList::IT_MODE_FIFO | SplDoublyLinkedList::IT_MODE_KEEP
+     *
+     * 列队用： SplDoublyLinkedList::IT_MODE_FIFO | SplDoublyLinkedList::IT_MODE_DELETE
+     *
+     *
+     * @param int $mode
+     * @return void
+     */
+    public function setIteratorMode($mode)
+    {
+        parent::setIteratorMode($mode);
+    }
+
+
+
+    /**
+     * 在指定索引处插入值newval，将该索引处的上一个值（以及所有后续值）在列表中向上移动。
+     *
+     * @param mixed $index 要插入新值的索引。
+     * @param mixed $value 索引的新值。
+     * @return void
+     * @throws OutOfRangeException 当索引超出范围或索引无法解析为整数时，抛出 。
+     */
+    public function add($index, $value):void
+    {
+        parent::add($index, $value);
+    }
+
+
+    /**
+     * 双向链表的末尾添加元素
+     * 在双向链表的末尾推送值。
+     *
+     * @param mixed $value 要推送的值。
+     * @return void
+     */
+    public function push($value):void
+    {
+        parent::push($value);
+    }
+
+
+    /**
+     * 在双链接列表开头添加一个元素
+     * 在双链接列表的开头添加值。
+     * @param mixed $value 要推送的值。
+     * @return void
+     */
+    public function unshift($value):void
+    {
+        parent::unshift($value);
+    }
+
+
+    /**
+     * 从双向链表的末尾弹出一个节点
+     *
+     * @return mixed 弹出节点的值。
+     */
+    public function pop()
+    {
+        return parent::pop();
+    }
+
+
+    /**
+     * 从双向链表的开头弹出一个节点
+     * @return mixed 移位节点的值。
+     * @throws RuntimeException 当数据结构为空时抛出
+     */
+    public function shift()
+    {
+        return parent::shift();
+    }
+
+
+
+    /**
+     * 移至上一个条目
+     * 将迭代器移动到上一个节点。
+     * @return void
+     */
+    public function prev():void
+    {
+        parent::prev();
+    }
+
+
+
+    /**
+     * 从双链接列表的开头查看节点
+     *
+     * @return mixed 第一个节点的值。
+     * @throws RuntimeException 当数据结构为空时。
+     */
+    public function bottom()
+    {
+        return parent::bottom();
+    }
+
+
+    /**
+     * 从双链接列表的末尾查看节点
+     * @return mixed 最后一个节点的值。
+     * @throws RuntimeException 当数据结构为空时。
+     */
+    public function top()
+    {
+        return parent::top();
+    }
+
+
+
+    /**
+     * 检查双向链表是否为空
+     *
+     * @return bool 返回双向链表是否为空。
+     */
+    public function isEmpty():bool
+    {
+        return parent::isEmpty();
+    }
+
+
+
+
+    /**
+     * 统计双链接列表中的元素数
+     *
+     * @return int 返回双链接列表中的元素数。
+     */
+    public function count():int
+    {
+        return parent::count();
+    }
+
+
+
+
+
+
+
+
+
+    /**
+     * 迭代器索引回到开始
+     * 这将迭代器倒回到开头
+     */
+    public function rewind():void
+    {
+        parent::rewind();
+    }
+
+
+    /**
+     * 返回当前数组条目
+     * 获取当前的双链接列表节点。
+     *
+     * @return mixed 当前的双链接列表节点值
+     */
+    public function current()
+    {
+        return parent::current();
+    }
+
+
+    /**
+     * 此函数返回当前节点索引
+     * @return bool|float|int|string|void|null 当前节点索引。
+     */
+    public function key()
+    {
+        return parent::key();
+    }
+
+    /**
+     * 移至下一个条目
+     * 将迭代器移动到下一个节点。
+     */
+    public function next()
+    {
+        parent::next();
+    }
+
+    /**
+     * 检查双链接列表是否包含更多节点
+     * @return bool 如果双链接列表包含更多节点，则返回TRUE，否则返回FALSE
+     */
+    public function valid():bool
+    {
+        return parent::valid();
+    }
+
+
+
+
+    /**
+     * 返回请求的 $index 是否存在
+     *
+     * @param mixed $index 正在检查的索引。
+     * @return bool 如果请求的索引存在，则为 TRUE，否则为 FALSE
+     */
+    public function offsetExists($index)
+    {
+        return parent::offsetExists($index);
+    }
+
+
+    /**
+     * 返回指定 $index 处的值
+     *
+     * @param mixed $index 索引
+     * @return mixed 指定索引处的值
+     */
+    public function offsetGet($index)
+    {
+        return parent::offsetGet($index);
+    }
+
+
+    /**
+     * 将指定的$index处的值设置为$newval
+     *
+     *
+     * @param mixed $index 正在设置的索引。
+     * @param mixed $value 索引的新值。
+     * @return void
+     */
+    public function offsetSet($index, $value):void
+    {
+        parent::offsetSet($index, $value); // TODO: Change the autogenerated stub
+    }
+
+
+    /**
+     * 在指定的$index处删除设置值
+     * @param mixed $index
+     * @return void
+     */
+    public function offsetUnset($index): void
+    {
+        parent::offsetUnset($index); // TODO: Change the autogenerated stub
+    }
+
+
+
+
+
+
+    /**
+     * 序列化存储
+     * @return string
+     */
+    public function serialize(): string
+    {
+        return parent::serialize();
+    }
+
+
+    /**
+     * 反序列化存储
+     * 从 SplDoublyLinkedList::serialize() 反序列化存储。
+     * @param string $data 序列化的字符串。
+     */
+    public function unserialize($data) : void
+    {
+        parent::unserialize($data); // TODO: Change the autogenerated stub
+    }
+
+
+}
+

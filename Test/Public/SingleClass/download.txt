@@ -1,0 +1,57 @@
+Array
+(
+    [PATH] => C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Program_Files\nodejs\;D:\Program_Files\php\php729n;D:\Program_Files\mysql\mysql57\bin;D:\Program_Files\java\jdk-8;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps
+    [SYSTEMROOT] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [PHPRC] => D:\Program_Files\php\php729n
+    [PHP_FCGI_MAX_REQUESTS] => 1000
+    [_FCGI_SHUTDOWN_EVENT_] => 1160
+    [SCRIPT_NAME] => /composer/composer_test/vendor/happylin/oldplugin/index.php
+    [REQUEST_URI] => /composer/composer_test/vendor/happylin/oldplugin/index.php?f=NetworkTest\SessionTest.php&m=sessionTest
+    [QUERY_STRING] => f=NetworkTest\SessionTest.php&m=sessionTest
+    [REQUEST_METHOD] => GET
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [REMOTE_PORT] => 49451
+    [SCRIPT_FILENAME] => E:/HTML/composer/composer_test/vendor/happylin/oldplugin/index.php
+    [SERVER_ADMIN] => admin@example.com
+    [CONTEXT_DOCUMENT_ROOT] => E:/HTML
+    [CONTEXT_PREFIX] => 
+    [REQUEST_SCHEME] => http
+    [DOCUMENT_ROOT] => E:/HTML
+    [REMOTE_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_NAME] => www.myhtml
+    [SERVER_SOFTWARE] => Apache/2.4.46 (Win64) mod_fcgid/2.3.9
+    [SERVER_SIGNATURE] => 
+    [SystemRoot] => C:\Windows
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_COOKIE] => cookie[three]=cookiethree; cookie[two]=cookietwo; cookie[one]=cookieone; Q_UDID=1fb94472-d048-f002-c2f1-9d44e1461272; Hm_lvt_3eec0b7da6548cf07db3bc477ea905ee=1631655624; _ga=GA1.1.1138429496.1631655624; __gads=ID=4711fd93e931eda9-22ab27149fcb008d:T=1631655625:RT=1631655625:S=ALNI_MbLP_2Xsvek633aCVxekSem-Zmjow
+    [HTTP_CONNECTION] => close
+    [HTTP_REFERER] => http://www.myhtml/composer/composer_test/vendor/happylin/oldplugin/index.php?f=NetworkTest\SessionTest.php
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_ACCEPT_LANGUAGE] => zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0
+    [HTTP_HOST] => www.myhtml
+    [FCGI_ROLE] => RESPONDER
+    [PHP_SELF] => /composer/composer_test/vendor/happylin/oldplugin/index.php
+    [REQUEST_TIME_FLOAT] => 1636458046.9581
+    [REQUEST_TIME] => 1636458046
+    [__GET] => Array
+        (
+            [f] => NetworkTest\SessionTest.php
+            [m] => sessionTest
+        )
+
+    [__POST] => Array
+        (
+        )
+
+    [__INPUT] => 
+)
+

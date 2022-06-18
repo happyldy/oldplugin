@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f8fafc;
+    font: 16px "微软雅黑", Arial, Helvetica, sans-serif;
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+#pageList .plate .show{
+    /*transition: all 0.3s linear 0.1s;*/
+    height: auto;
+    opacity: 1;
+}
+
+#pageList .fileList{
+    height: 0;
+    opacity: 0;
+}
+.fileList{
+    margin-left: 16px;
+    overflow: hidden;
+}
+.plate{
+    padding: 5px 0;
+}
+
+.dirName{
+    font-weight: 600;
+}
+
+.code{
+    box-shadow: 0px 9px 46px #00008b1a;
+    padding: 14px 2px;
+    box-sizing: border-box;
+    border: 1px solid #8080800a;
+    margin: 20px;
+}
+.pre{
+    overflow: auto;
+    box-sizing: border-box;
+    max-height: calc(90vh);
+    padding: 0 4px;
+}
+
+.but{
+    height: 17px;
+    width: 100%;
+    border: 1px solid #d5cece;
+    border-radius: 4px;
+    margin: 0px 4px 4px 0;
+    background: #dddada;
+    position: relative;
+}
+.but:before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 3px solid #aea9a9;
+    transform: rotate(-45deg);
+    border-top: none;
+    border-right: none;
+    top: 0;
+    left: 50%;
+}
+
+
+
+
+
+
