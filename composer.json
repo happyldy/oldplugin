@@ -1,8 +1,15 @@
 {
   "name": "happylin/oldplugin",
+  "description": "library",
   "require": {
     "php": ">=7.0"
   },
+  "authors": [
+    {
+      "name": "ldy",
+      "email": "3241573082@qq.com"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "HappyLin\\OldPlugin\\": ""
@@ -10,5 +17,6 @@
     "files": [
       "SingleClass/HelpFunction/AuthFunction.php"
     ]
-  }
+  },
+  "minimum-stability": "dev"
 }
