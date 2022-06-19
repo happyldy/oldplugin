@@ -10,6 +10,7 @@
       "email": "3241573082@qq.com"
     }
   ],
+  "license": "Apache-2.0",
   "autoload": {
     "psr-4": {
       "HappyLin\\OldPlugin\\": ""
