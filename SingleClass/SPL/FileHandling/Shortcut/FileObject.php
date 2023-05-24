@@ -297,8 +297,6 @@ class FileObject extends \SplFileObject
         header('Content-Type: application/vnd.ms-excel');
         header('Content-Disposition: attachment;filename=' . $fileName . '.csv');
 
-
-
         //打开PHP文件句柄,php://output,表示直接输出到浏览器
         $fp = new \SplFileObject("php://output","a");
 

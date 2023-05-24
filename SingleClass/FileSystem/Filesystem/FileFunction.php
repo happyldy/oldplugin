@@ -909,7 +909,7 @@ class FileFunction{
      */
     public static function readfile( string $filename, bool $use_include_path = FALSE, resource $context = null ) : int
     {
-        return readfile(...func_num_args());
+        return readfile(...func_get_args());
     }
 
 

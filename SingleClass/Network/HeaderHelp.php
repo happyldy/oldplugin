@@ -536,7 +536,7 @@ final class HeaderHelp
      */
     public function setAccessControlAllowCredentials(bool $bool):HeaderHelp
     {
-        $this->_transformation('Access-Control-Allow-Credentials', $type, true);
+        $this->_transformation('Access-Control-Allow-Credentials', $bool, true);
         return $this;
     }
 

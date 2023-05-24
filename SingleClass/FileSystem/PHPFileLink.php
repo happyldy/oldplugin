@@ -71,7 +71,7 @@ class PHPFileLink
         string $filePattern = '/.*(Test|Test.php)$/',
         string $methodPattern = '/.*(Test)$/',
         array $excludeMethod = array(
-            'HappyLin\OldPlugin\Test\SingleClassTest' => array('apiTest')
+            'HappyLin\OldPlugin\Test\SingleClassTest' => array('apiTest','linshiTest')
         )
 
     )

@@ -148,9 +148,9 @@ class HeaderTest
         $downloadObject = new DownloadClass($downloadFile, 'test.txt');
 
         // 下传整个文件
-        // $downloadObject->downloadFile();
+        $downloadObject->downloadFile();
         // 分段传输，支持断点续传
-        $downloadObject->downloadLargeFile();
+        // $downloadObject->downloadLargeFile();
 
         // 下传字符串
         //\HappyLin\OldPlugin\SingleClass\Network\Download\DownloadClass::downloadString('3333333', 'test.txt');

@@ -156,7 +156,7 @@ class NetworkFunctionTest
 
         var_dump(static::toStr("解析 URL，返回其组成部分;指定 PHP_URL_SCHEME、 PHP_URL_HOST、 PHP_URL_PORT、 PHP_URL_USER、 PHP_URL_PASS、 PHP_URL_PATH、 PHP_URL_QUERY 或 PHP_URL_FRAGMENT 的其中一个来获取 URL 中指定的部分的 string; \n parse_url( 'http://username:password@hostname/path?arg=value#anchor'); ",  parse_url('http://username:password@hostname/path?arg=value#anchor')));
 
-        var_dump(static::toStr('从一个文件中提取所有的 meta 标签 content 属性;只用于本地文件，不适用于 URL。', get_meta_tags(HAPPLYLIN_OLDPLUGIN_RELATAVE_DIR . '/Test/View/PHPFileLinkMethod.php')));
+        var_dump(static::toStr('从一个文件中提取所有的 meta 标签 content 属性;只用于本地文件，不适用于 URL。', get_meta_tags(HAPPLYLIN_OLDPLUGIN_RELATAVE_DIR . '/View/PHPFileLinkMethod.php')));
 
         var_dump(static::toStr('取得服务器响应一个 HTTP 请求所发送的所有标头; get_headers("https://www.baidu.com")', get_headers("https://www.baidu.com")));
 

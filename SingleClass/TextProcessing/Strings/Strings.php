@@ -812,6 +812,9 @@ class Strings{
      * 设置地区信息
      *
      * 区域设置信息是按进程维护的，而不是按线程维护的。使用setlocale（）更改进程范围的区域设置
+     * 
+     * setlocale(LC_CTYPE, 'C'); // 设置本地设置为 C 语言本地设置
+     * setlocale(LC_ALL, 'zh-CN');
      *
      * category 命名常量指定的受区域设置的功能类别:
      * ◦ LC_ALL 所有的设置

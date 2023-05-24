@@ -480,26 +480,9 @@ class DatabasePDOTest
         }
 
         echo "事务执行成功";
-
     }
-    
-
-
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

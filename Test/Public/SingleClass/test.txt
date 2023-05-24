@@ -1,1 +1,2 @@
-2021-10-172021-10-17
+<p>Welcome! Today is the <?php echo(date('jS')); ?> of <?= date('F'); ?>.</p>
+11111 一一一 壹壹

@@ -59,19 +59,27 @@ trait TraitTest
     }
 
 
+    public static function javascriptPrintJson($json_str)
+    {
+        echo <<<EOF
+<script type="text/javascript">
+    function printJSON(json){
+        json = JSON.parse(json);
+        json = JSON.stringify(json, null , 4);
+        let pre = document.createElement('pre');
+        let code = document.createElement('code');
+        let content = document.createTextNode(json);
+        code.appendChild(content);
+        pre.appendChild(code);
+        document.body.appendChild(pre);
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        let myJSON = '{$json_str}';
+        printJSON(myJSON);
+    });
+</script>
+EOF;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
